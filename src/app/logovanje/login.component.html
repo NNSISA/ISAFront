@@ -1,0 +1,40 @@
+<div class="limiter" *ngIf="this.isVisible">
+    <div class="container-login100">
+        <div class="wrap-login100" style="background-color:rgb(117, 197, 197, 0.5);">
+            <form class="login100-form validate-form">
+                <h2 class="form-title p-b-26">
+                    Dobrodošli
+                </h2>
+                <div id="errorMessage" class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+                <div id="successMessage" class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
+                <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
+                    <input id="email" class="input100" type="text" name="email" placeholder="Korisničko ime"
+                        [(ngModel)]="user.username">
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Unesite lozinku">
+                    <span class="btn-show-pass">
+                        <i class="zmdi zmdi-eye"></i>
+                    </span>
+                    <input id="password" class="input100" type="password" name="pass" placeholder="Lozinka"
+                        [(ngModel)]="user.password">
+                </div>
+                <button id="loginButton" type="submit" name="submit" class="form-submit btn btn-primary" value="Login"
+                    (click)="handleLogin()">Prijavite se</button>
+                <div class="text-center p-t-115 dhaa">
+                    <span class="form-title">
+                        Nemate nalog?
+                    </span>
+                    <a class="form-title" href="#" (click)="change(false)" routerLinkActive='active'
+                        [routerLink]="['/registration']">
+                        Registracija
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="page-footer font-small special-color-dark pt-4">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <b>Nikola Livada, Stefan Bugarinović, Nađa Lončar</b>
+    </div>
+</footer>

@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(117, 197, 197, 0.5);">
+  <a class="navbar-brand" href="#">Klinički centar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLinkActive='active' [routerLink]="['/patient-profile']">Profil<span
+            class="sr-only"></span></a>
+      </li>
+    </ul>
+  </div>
+  <app-logout></app-logout>
+</nav>
+<div class="container">
+  <div class="row news-row">
+    <div class="container-fluid col-md-6 col-sm-6 justify-content-center news-block">
+      <div class="card-group">
+        <div class="underlay">
+          <div class="card">
+            <div class="card-block">
+              <h5 class="card-title" style="font-size: 24px;"><a id="clinicSearch" href="#" routerLinkActive='active'
+                  [routerLink]="['/clinics']" >Pregled klinika</a></h5>
+              <small a id="clinicSearch" href="#" routerLinkActive='active' [routerLink]="['/clinics']">Ovde možete
+                zakazati preglede i videti spisak klinika</small>
+              <div class="card-img-top clinicsImage" id="clinicSearch" href="#" routerLinkActive='active'
+                [routerLink]="['/clinics']"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row news-row">
+    <div class="container-fluid col-md-6 col-sm-6 justify-content-center news-block">
+      <div class="card-group">
+        <div class="underlay">
+          <div class="card">
+            <div class="card-block">
+              <h5 class="card-title" style="font-size: 24px;"><a class="prosirenje" href="#" routerLinkActive='active'
+                  [routerLink]="['/historyOfAppointments']">Istorija pregleda i operacija</a></h5>
+              <small a class="prosirenje" href="#" routerLinkActive='active'
+                [routerLink]="['/historyOfAppointments']">Ovde možete oceniti klinike i doktore</small>
+              <div class="card-img-top historyImage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+  <div class="container">
+    <div class="row news-row">
+      <div class="container-fluid col-md-6 col-sm-6 justify-content-center news-block">
+        <div class="card-group">
+          <div class="underlay">
+            <div class="card">
+              <div class="card-block">
+                <h5 class="card-title" style="font-size: 24px;"><a href="#" routerLinkActive='active'
+                    [routerLink]="['/medicalRecord']">Medicinski izveštaji</a></h5>
+                <small a href="#" routerLinkActive='active' [routerLink]="['/medicalRecord']"> Ovde imate uvid u Vaše
+                  osnovne podatke</small>
+                <div class="card-img-top mrImage" a href="#" routerLinkActive='active'
+                  [routerLink]="['/medicalRecord']">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer font-small special-color-dark pt-4">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <b>Nikola Livada, Stefan Bugarinović, Nađa Lončar</b>
+    </div>
+  </footer>
